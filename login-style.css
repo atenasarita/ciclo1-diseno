@@ -70,9 +70,9 @@ body {
     width: 90%; 
     height: 42px;
     border: solid 1px;
-    border-radius: 15px;
+    border-radius: 50px;
     background-color: transparent;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .right button{
