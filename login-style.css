@@ -34,7 +34,6 @@ body {
     max-width: 200px;
     height: auto; 
     object-fit: contain; 
-    top: 0;
 }
 
 #container {
@@ -84,7 +83,6 @@ body {
 
 .right button:hover{
     background-color: rgb(48, 52, 70);
-    color: #F1F1F2;
     transition: all 200ms;
     cursor: pointer;
 }
@@ -93,7 +91,6 @@ body {
     margin-top: 70px;
     display: flex;
     flex-direction: row;
-    text-decoration: none;
 }
 
 .signin-text a:hover{
