@@ -87,10 +87,10 @@ body {
     height: 100vh;
     overflow: hidden;
     margin-left: 200px;
-  }
+}
   
 .bg-video {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

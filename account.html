@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="account-styles.css" />
+  <title>Account Info</title>
+</head>
+<body>
+
+    <div class="back-button">
+        <a href="session-started.html"><img src="assets/back.png"></a>
+      </div>
+
+  <div class="account-container">
+    <div class="header">
+      <h1>Your Account</h1>
+    </div>
+
+    <form class="account-form" id="accountForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" value="Jane" disabled>
+
+      <label for="lastname">Last Name</label>
+      <input type="text" id="lastname" value="Doe" disabled>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" value="N00727400" disabled>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" value="********" disabled>
+
+      <input class="btn" type="submit" value="Save Changes" style="display: none;" id="saveBtn">
+    </form>
+
+    <button class="btn" id="edit-btn" style="margin-top: 10px;">Edit Info</button>
+  </div>
+
+  <script>
+    const editBtn = document.getElementById('edit-btn');
+    const saveBtn = document.getElementById('saveBtn');
+    const inputs = document.querySelectorAll('#accountForm input');
+
+    editBtn.addEventListener('click', () => {
+      inputs.forEach((input, index) => {
+        if (index < inputs.length - 1) input.disabled = false; // leave submit button alone
+      });
+      saveBtn.style.display = 'block';
+      editBtn.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
